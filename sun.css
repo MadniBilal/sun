@@ -1,0 +1,269 @@
+  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+ body {
+     background:url('https://static.tumblr.com/80fd53d1e6daf352bb284fbc4290ebb2/fovzl5q/Woknir5t1/tumblr_static_4pfcavjl2dk44gg8048o0cckk.jpg');
+     
+     }
+ 
+ 
+html {
+    background-color: #000;
+ 
+}
+
+
+
+body, html {
+  
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+.sun {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    
+    border-radius: 100%;
+      
+    /*box-shadow: rgb(204, 153, 0) 0px 0px 50px 0px;*/
+}
+
+.earth {
+    height: 25px;
+    width: 25px;
+     background-color:green;
+    border-radius: 100%;
+    box-shadow: green 0 0 25px;
+}
+
+.earth-orbit {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    
+    margin-left: -100px;
+    margin-top: -100px;
+    
+    
+    /*border-radius: 50%;*/
+    /*border: 1px dotted gray;*/
+    -ms-aimation: spin-right 10s linear infinite;
+  -moz-animation: spin-right 10s linear infinite;
+  -o-animation: spin-right 10s linear infinite;
+   animation: spin-right 10s linear infinite;
+    -webkit-animation: spin-right 10s linear infinite;
+}
+
+.moon {
+    width:10px;
+     background-color:white;
+border-radius:100%;     
+}
+
+.moon-orbit {
+    top: 50%;
+    left: 50%;
+
+    height: 50px;
+    width: 50px;
+
+    margin-left: -12.5px;
+    margin-bottom: -37px;
+    
+    border: 1px solid rgba(255, 0, 0, 0.1);
+    border-radius: 50%;
+    
+    -webkit-animation: spin-right 2s linear infinite;
+  -ms-imation: spin-right 2s linear infinite;
+  -moz-animation: spin-right 2s linear infinite;
+  -o-animation: spin-right 2s linear infinite;
+   animation: spin-right 2s linear infinite;
+}
+
+
+@-webkit-keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+      -ms-transform:rotate(360deg);
+      -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      
+         transform:rotate(360deg);
+    }
+}
+
+
+@-ms-keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+      -ms-transform:rotate(360deg);
+      -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      
+         transform:rotate(360deg);
+    }
+}
+
+
+@-moz-keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+      -ms-transform:rotate(360deg);
+      -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      
+         transform:rotate(360deg);
+    }
+}
+
+
+@-o-keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+      -ms-transform:rotate(360deg);
+      -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      
+         transform:rotate(360deg);
+    }
+}
+
+.circle{
+  
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
+   
+  display: -webkit-flex;
+  display:         flex;
+  
+  -ms-align-items: center;
+-moz-align-items: center;
+-o-align-items: center;
+  
+  -webkit-align-items: center;
+          align-items: center;
+  
+  -ms-justify-content: center;
+-moz-justify-content: center;
+-o-justify-content: center;
+  
+  -webkit-justify-content: center;
+          justify-content: center;
+  
+  
+  background-color:transparent;
+   
+  border-radius: 100%;
+     webkit-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
+  -webkit-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
+      -ms-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
+      -moz-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
+         animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
+}
+/*--(153, 230, 0)  --*/
+
+ @-ms-keyframes at-ripple
+{0% {box-shadow: 0 4px 20px
+rgba(204, 153, 0, 0.1), 0 0 0 0  
+rgba(204, 153, 0, 0.1), 0 0 0 10px 
+rgba(204, 153, 0, 0.1), 0 0 0 20px 
+rgba(204, 153, 0, 0.1); } 100%
+ 
+{box-shadow: 0 4px 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 20px 
+rgba(38, 38, 38, 0.1), 0 0 0 30px 
+rgba(38, 38, 38, 0); }}
+
+
+
+
+ @-moz-keyframes at-ripple
+{0% {box-shadow: 0 4px 20px
+rgba(204, 153, 0, 0.1), 0 0 0 0  
+rgba(204, 153, 0, 0.1), 0 0 0 10px 
+rgba(204, 153, 0, 0.1), 0 0 0 20px 
+rgba(204, 153, 0, 0.1); } 100%
+ 
+{box-shadow: 0 4px 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 20px 
+rgba(38, 38, 38, 0.1), 0 0 0 30px 
+rgba(38, 38, 38, 0); }}
+
+
+
+ @-webkit-keyframes at-ripple
+{0% {box-shadow: 0 4px 20px
+rgba(204, 153, 0, 0.1), 0 0 0 0  
+rgba(204, 153, 0, 0.1), 0 0 0 10px 
+rgba(204, 153, 0, 0.1), 0 0 0 20px 
+rgba(204, 153, 0, 0.1); } 100%
+ 
+{box-shadow: 0 4px 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 20px 
+rgba(38, 38, 38, 0.1), 0 0 0 30px 
+rgba(38, 38, 38, 0); }}
